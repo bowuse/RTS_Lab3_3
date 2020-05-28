@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RTS_Lab3_3</string>
+    <string name="solvingTime">Solved in %.4f seconds, %d iterations</string>
+</resources>
