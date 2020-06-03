@@ -42,7 +42,7 @@ fun solve(coefs: List<Int>, answer: Int): Pair<List<Int>, Pair<Double, Int>> {
         }
         population = newPopulation
     }
-    return answers to ((nanoTime() - startTime) / 1000000000.0 to iterations)
+    return Triple(answers, ((nanoTime() - startTime) / 1000000000.0 to iterations), iterations * populationSize)
 }
 
 fun delta(expected: Int, actual: Int) = abs(expected - actual)

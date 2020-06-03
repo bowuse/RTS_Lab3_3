@@ -19,10 +19,10 @@ class MainActivity : AppCompatActivity() {
             a3.text.toString().toInt(),
             a4.text.toString().toInt())
         val answer = answerField.text.toString().toInt()
-        val (answers, duration) = solve(coefs, answer)
+        val (answers, duration, mutatenum) = solve(coefs, answer)
         val toast = Toast.makeText(
             applicationContext,
-            getString(R.string.solvingTime, duration.first, duration.second),
+            getString(R.string.solvingTime, duration.first, duration.second, mutatenum),
             Toast.LENGTH_SHORT)
         toast.show()
 
